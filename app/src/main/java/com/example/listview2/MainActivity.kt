@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             "Beginner",
             "DSA"
         )
-        val lodu = arrayOf("LODU1", "LODU2", "L0DU3", "LODU4", "LODU5", "LODU6", "LODU7")
+        val lodu = arrayOf("MEMBER1", "MEMBER2", "MEMBER3", "MEMBER4", "MEMBER5", "MEMBER6", "MEMBER7")
         val course = arrayOf("B.TECH", "B.TECH", "B.TECH", "B.TECH", "B.TECH", "B.TECH", "B.TECH")
         val branch = arrayOf("C.S", "C.S", "C.S", "C.S", "C.S", "C.S", "C.S")
         val birth = arrayOf(
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             "06/01/2004",
             "22/10/2004",
             "10/05/2005",
-            "19/10/2003",
+            "19/09/2003",
             "03/02/2005"
 
         )
@@ -94,6 +94,7 @@ class MainActivity : AppCompatActivity() {
             val image= img[position]
             val num = num[position]
 
+
             val pass= Intent(this, MainActivity2::class.java)
             pass.putExtra("name",name)
             pass.putExtra("tech",tech)
@@ -103,6 +104,8 @@ class MainActivity : AppCompatActivity() {
             pass.putExtra("image",image)
             pass.putExtra("number", num)
           startActivity(pass)
+
+
         }
     }
 }
